@@ -12,7 +12,21 @@
 
   <title>iCoder Heaven for programmer</title>
 </head>
-
+  <style>
+  .loginBtn{
+    display: flex;
+    gap: 10px;
+  }
+  @media (max-width : 990px) {
+    .loginBtn{
+    display: flex;
+    margin-top: 10px;
+  }
+  .signup{
+    margin-left: 10px;
+  }
+  }
+  </style>
 <body>
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -55,9 +69,9 @@
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-light" type="submit">Search</button>
         </form>
-        <div class="mx-2">
-          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
-          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up</button>
+        <div class="mx-2 loginBtn">
+          <button class="btn btn-danger login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button class="btn btn-danger signup" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up</button>
         </div>
       </div>
     </div>
